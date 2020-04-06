@@ -4,6 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Restaraunt\" />
+    <Folder Include="Views\ThankYou\" />
+    <Folder Include="Views\Search\" />
+  </ItemGroup>
+
 
 
 </Project>
