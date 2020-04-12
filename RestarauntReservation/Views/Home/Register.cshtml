@@ -1,0 +1,32 @@
+﻿<h1>Regsiter</h1>
+<form method="POST">
+    <p>
+        <label>Name:</label>
+        <br>
+        <input type="text" name="name" />
+    </p>
+    <p>
+        <label>Username:</label>
+        <br>
+        <input type="text" name="username" />
+    </p>
+    <p>
+        <label>Email:</label>
+        <br>
+        <input type="text" name="email" />
+    </p>
+    <p>
+        <label>Password:</label>
+        <br>
+        <input type="password" name="password" />
+    </p>
+    <p>
+        <label>Confirm Password:</label>
+        <br>
+        <input type="password" name="confirmpassword" />
+    </p>
+    <p>
+        Already have an Account? <a asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+    </p>
+    <button class="button" type="submit">Register</button>
+</form>

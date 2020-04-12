@@ -1,15 +1,17 @@
 ﻿<h1>Login</h1>
-<form>
+<form method="POST">
     <p>
         <label>Username:</label>
+        <br>
         <input type="text" name="username" />
     </p>
     <p>
         <label>Password:</label>
+        <br>
         <input type="password" name="password" />
     </p>
     <p>
-        Don't have an account? <a href="#">Register</a>
+        Don't have an account? <a asp-area="" asp-controller="Home" asp-action="Register">Register</a>
     </p>
     <button class="button" type="submit">Login</button>
 </form>
