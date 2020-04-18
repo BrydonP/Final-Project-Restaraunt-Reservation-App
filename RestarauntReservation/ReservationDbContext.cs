@@ -10,12 +10,15 @@ namespace RestarauntReservation {
         //TODO Put in Tables
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Table> Tables { get; set; }
+
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseSqlServer(
-                @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ReservationsDatabase;Data Source=boba.fast.sheridanc.on.ca:1521/aces;uid=s7_parsobry; password=991546642");
-               // < add name = "dbnameConnectionString" connectionString = "server=.;database=dbname;uid=user;password=pass;Initial Catalog=dbname;Integrated Security= false" providerName = "System.Data.SqlClient" />
+                @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ReservationsDatabase;Data Source=WINDOWS-LAPTOP\SQLEXPRESS");
         }
     }
 }
