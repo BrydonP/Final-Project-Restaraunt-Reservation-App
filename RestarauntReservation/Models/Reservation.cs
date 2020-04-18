@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 
 namespace RestarauntReservation.Models {
     public class Reservation {
-        public Restaraunt Restaraunt { get; set; }
+        public int Id { get; set; }
+        public Restaurant Restaurant { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string Notes { get; set; }
         public int TableNumber { get; set; }
+        public Table TableType { get; set; }
 
-        public void MakeReservation(Restaraunt rest) {
+        public void MakeReservation(Restaurant rest) {
             if (rest.CheckAvailability(TableNumber)) {//Table Available
-                rest.Tables[TableNumber].IsReservable = false;
                 // TODO Link these to View Text Boxes
                 //rest.Reservations[TableNumber].StartTime = TextBox.text;
                 //rest.Reservations[TableNumber].EndTime = TextBox.text;

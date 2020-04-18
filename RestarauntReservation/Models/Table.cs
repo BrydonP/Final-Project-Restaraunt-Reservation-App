@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace RestarauntReservation.Models {
     public class Table {
-        public Boolean IsReservable { get; set; }
-        public int Seats { get; set; }
+        public int Id { get; set; }
+        public int Seats { get; set; } //How many Seats
         public SeatType SeatType { get; set; }
     }
 }
