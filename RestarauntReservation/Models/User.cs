@@ -10,6 +10,5 @@ namespace RestarauntReservation.Models {
         public String FirstName { get; set; }
         public String Email { get; set; }
         public String Password { get; set; }
-        public String Avatar { get; set; }
     }
 }
