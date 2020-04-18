@@ -25,12 +25,12 @@ namespace RestarauntReservation.Controllers {
 
         public IActionResult Login()
         {
-            return View("Login");
+            return View("../User/Login");
         }
 
         public IActionResult Register()
         {
-            return View("Register");
+            return View("../User/Register");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
