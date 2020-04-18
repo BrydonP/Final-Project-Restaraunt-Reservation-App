@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<List_Data_Binding_in_MVC.Models.Restaurants>
+@{
+
     ViewData["Title"] = "Home Page";
 }
 
@@ -8,5 +10,10 @@
 </div>
 
 @{ foreach (var restaurant in Model)
-        //Html.RenderPartial("RestaurantTemplate", restaurant);
+    {
+        <div>
+            @restaurant.Name;
+            @restaurant.Tables;
+        </div>
+    }
 }
