@@ -27,7 +27,9 @@ namespace RestarauntReservation {
         public static void PopulateDataBase() {
             Location newLoc = new Location{Country = "Canada", Address = "3456 Main Street", PostalCode = "JHF7S8", City = "Toronto", Lat = "43",Long = "42"};
             Restaurant newRest = new Restaurant { Name = "Boston Pizza", FoodType = FoodType.Casual, Location = newLoc };
-
+            Table fourStandardTable = new Table{Seats = 4, SeatType = SeatType.Standard};
+            Table sixBoothTable = new Table{SeatType = SeatType.Booth, Seats = 6};
+            Table fourHighTopTable = new Table{SeatType = SeatType.HighTop, Seats = 4};
             _database.Restaurants.Add(newRest);
             _database.Locations.Add(newLoc);
             _database.SaveChanges();
