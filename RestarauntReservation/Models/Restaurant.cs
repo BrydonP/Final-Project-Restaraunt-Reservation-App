@@ -14,6 +14,7 @@ namespace RestarauntReservation.Models {
         public Location Location { get; set; }
         public FoodType FoodType { get; set; }
         public List<Table> Tables { get; set; }
+        public List<Table> AvailableTables { get; set; }
         public List<Reservation> Reservations { get; set; }
 
 
