@@ -12,6 +12,7 @@ namespace RestarauntReservation {
         public DbSet<User> Users { get; set; }
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Location> Locations { get; set; }
         public DbSet<Table> Tables { get; set; }
 
 
